@@ -67,10 +67,24 @@ textarea {
     margin-top: -15px;
 }
 
-.tiacv-content > h3,
-.tiacv-content > h1
+.tiacv-rojo
 {
     color: #c90e2b;
+}
+
+.tiacv-btn 
+{
+    background-color: #c90e2b;
+    color: #ffffff;
+    border-color: #c90e2b;
+}
+
+.tiacv-btn:hover,
+.tiacv-btn:focus  
+{
+    background-color: #ffffff;
+    color: #c90e2b;
+    border-color: #c90e2b;
 }
 
 #foto_banner {
