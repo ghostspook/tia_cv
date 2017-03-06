@@ -67,11 +67,18 @@ textarea {
     margin-top: -15px;
 }
 
-.tiacv-content > h3
+.tiacv-content > h3,
+.tiacv-content > h1
 {
     color: #c90e2b;
 }
 
 #foto_banner {
     text-align: center;
+}
+
+.fixed-ratio-resize { /* basic responsive img */
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* IE8 */
 }
