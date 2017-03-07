@@ -1,0 +1,161 @@
+@{
+    ViewData["Title"] = "Hoja de Vida";
+}
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <h1 class="tiacv-rojo">@ViewData["Title"]</h1>
+        <form>
+          <legend>Paso 1 de 4</legend>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="primerNombre">Primer Nombre</label>
+                <input type="text" class="form-control" id="primerNombre">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="segundoNombre">Segundo Nombre</label>
+                <input type="text" class="form-control" id="segundoNombre">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="primerApellido">Primer Apellido</label>
+                <input type="text" class="form-control" id="primerApellido">
+              </div>              
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="segundoApellido">Segundo Apellido</label>
+                <input type="text" class="form-control" id="segundoApellido">
+              </div>                            
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="cedulaNo">Cédula de identidad</label>
+                <input type="text" class="form-control" id="cedulaNo">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="sexo">Sexo</label>
+                  <select id="sexo" name="sexo" class="form-control">
+                    <option value="0">- Selecionar -</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                  </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                <input type="text" class="form-control" id="fechaNacimiento">
+              </div>              
+            </div>
+            <div class="col-md-3">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="nacionalidad">Nacionalidad</label>
+                <input type="text" class="form-control" id="nacionalidad">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="estadoCivil">Estado Civil</label>
+                  <select id="estadoCivil" name="estadoCivil" class="form-control">
+                    <option value="0">- Selecionar -</option>
+                    <option value="1">Soltero/a</option>
+                    <option value="2">Casado/a</option>
+                    <option value="2">Viudo/a</option>
+                    <option value="2">Divorciado/a</option>
+                  </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" class="form-control" id="ciudad">
+              </div>              
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="sector">Sector</label>
+                  <select id="sector" name="sector" class="form-control">
+                    <option value="0">- Selecionar -</option>
+                    <option value="1">Norte</option>
+                    <option value="2">Sur</option>
+                    <option value="2">Este</option>
+                    <option value="2">Oeste</option>
+                  </select>
+              </div>                          
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="form-group">
+                <label for="direccionDomiciliaria">Dirección domiciliaria</label>
+                <input type="text" class="form-control" id="direccionDomiciliaria">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="telefonoDomicilio">Teléfono domicilio</label>
+                <input type="tel" class="form-control" id="telefonoDomicilio">
+              </div>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="form-group">
+                <label for="correoElectronico">Correo electrónico</label>
+                <input type="email" class="form-control" id="correoElectronico">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="telefonoCelular">Teléfono celular</label>
+                <input type="tel" class="form-control" id="telefonoCelular">
+              </div>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="modalidadPreferente">¿En qué modalidad te gustaría trabajar?</label>
+                <select id="modalidadPreferente" name="modalidadPreferente" class="form-control">
+                  <option value="0">- Selecionar -</option>
+                  <option value="1">Opción 1</option>
+                  <option value="2">Opción 1</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="tipoDeDiscapacidad">Tiene algún tipo de discapacidad?</label>
+                <select id="tipoDeDiscapacidad" name="tipoDeDiscapacidad" class="form-control">
+                  <option value="0">Ninguna</option>
+                  <option value="1">Opción 1</option>
+                  <option value="2">Opción 1</option>
+                </select>
+              </div>              
+            </div>
+          </div>
+          <div class="row" style="text-align: center">
+            <a class="btn btn-default btn-lg tiacv-btn" asp-controller="HojaDeVida" asp-action="Paso2">Siguiente</a>
+          </div>
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+
+
+

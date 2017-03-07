@@ -13,5 +13,10 @@ namespace TIA_CV.Controllers
             return View();
         }
 
+        public IActionResult Paso1()
+        {
+            return View();
+        }
+
     }
 }
